@@ -568,11 +568,16 @@ body {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  fill: #ffffff;
 }
 
 .footer-icons-list li:not(:last-child) {
   margin-right: 10px;
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
 }
 
 .footer-link:hover,
