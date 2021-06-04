@@ -546,6 +546,7 @@ body {
 
 .footer-icon {
   margin-left: 70px;
+  margin-top: 9px;
 }
 .footer-icon-title {
   color: var(--white-color);
