@@ -392,10 +392,11 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team-name {
-  padding: 30px 32px 16px 32px;
+  padding: 30px 32px;
 }
 
 .team-img img {
@@ -403,7 +404,6 @@ body {
 }
 .icon-list {
   margin: 0 auto;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
 }
@@ -451,12 +451,8 @@ body {
 
 .clients-card {
   display: inline-block;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
   cursor: pointer;
-  width: 170px;
-  height: 92px;
 }
 
 .clients-list li:not(:last-child) {
@@ -469,6 +465,8 @@ body {
   align-content: center;
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .client-icon {
   display: flex;
@@ -478,13 +476,13 @@ body {
   padding: 16px 32px;
 }
 
-.clients-card:hover,
-.clients-card:focus {
+.clients-card-item:hover,
+.clients-card-item:focus {
   border-color: var(--accent-color);
 }
 
-.clients-card:hover .client-icon,
-.clients-card:focus .client-icon {
+.clients-card-item:hover .client-icon,
+.clients-card-item:focus .client-icon {
   fill: var(--accent-color);
 }
 /*FOOTER SECTION*/
@@ -540,13 +538,11 @@ body {
 
 .footer .container {
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
+  align-items: baseline;
 }
 
 .footer-icon {
   margin-left: 70px;
-  margin-top: 9px;
 }
 .footer-icon-title {
   color: var(--white-color);
@@ -561,7 +557,7 @@ body {
   display: flex;
 }
 
-.footer-icons-list .footer-link {
+.footer-icon-item {
   display: flex;
   width: 44px;
   height: 44px;
@@ -581,9 +577,10 @@ body {
   fill: var(--white-color);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-icon-item:hover,
+.footer-icon-item:focus {
   background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 /*PORTFOLIO SECTION*/
 
