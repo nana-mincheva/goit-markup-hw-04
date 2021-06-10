@@ -245,8 +245,8 @@ body {
   display: block;
 }
 
-.filter-item:hover,
-.filter-item:focus {
+.filter-item-card:hover,
+.filter-item-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -411,17 +411,16 @@ body {
 .icon-list li:not(:last-child) {
   margin-right: 10px;
 }
-.icon-list li {
-  width: 44px;
-  height: 44px;
-  background-color: white;
-  border-radius: 50%;
+
+.icon-item {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.icon-item {
+  width: 44px;
+  height: 44px;
   color: var(--icon-color);
+  background-color: white;
+  border-radius: 50%;
 }
 .icon {
   fill: currentColor;
@@ -429,13 +428,13 @@ body {
   height: 20px;
 }
 
-.icon-link:hover .icon,
-.icon-link:focus .icon {
+.icon-item:hover .icon,
+.icon-item:focus .icon {
   fill: var(--white-color);
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.icon-item:hover,
+.icon-item:focus {
   background-color: var(--accent-color);
 }
 
@@ -469,11 +468,7 @@ body {
   border-radius: 4px;
 }
 .client-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   fill: var(--icon-color);
-  padding: 16px 32px;
 }
 
 .clients-card-item:hover,
@@ -611,8 +606,7 @@ body {
   display: inline-block;
   background-color: var(--button-color);
   color: var(--title-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -629,4 +623,6 @@ body {
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
